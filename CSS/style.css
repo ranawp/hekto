@@ -123,3 +123,135 @@ select option {
     background: rgba(251, 46, 134, 1);
     padding: 9.3px;
 }
+
+/* /slider */
+.swiper-slide {
+    background-color: #F2F0FF;
+    ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.swiper-slide .left-side {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+    position: relative;
+}
+
+.swiper-slide .left-side .left-side-info {
+    position: absolute;
+    /* right: 50%; */
+    left: 35%;
+}
+
+.swiper-slide .left-side .left-side-info h2 {
+    font-family: 'Josefin Sans';
+    font-size: 38px;
+    /* line-height: 82px; */
+    /* letter-spacing: 0.015em; */
+    margin: 10px 0;
+    color: #000000;
+}
+
+.swiper-slide .left-side .left-side-info .describe {
+    color: #8A8FB9;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+
+}
+
+.shop-now {
+    Width: 163px;
+    Height: 50px;
+    background: #FB2E86;
+    border-radius: 2px;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+}
+
+.highlight {
+    color: #FB2E86;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+
+}
+
+.swiper-slide .left-side img {
+    height: 300px;
+    width: 300px;
+
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.right-side {
+    position: relative;
+}
+
+.bg-shadow {
+    position: absolute;
+    width: 500px;
+    width: 500px;
+    left: 10%;
+    top: 5%;
+    z-index: 1;
+}
+
+.bg-shadow2 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 20%;
+    top: 2%;
+    z-index: 2;
+}
+
+.chair {
+    z-index: 10;
+    position: absolute;
+    Width: 450px;
+    Height: 450px;
+    left: 15%;
+    top: 10%;
+}
+
+.discount {
+
+    position: absolute;
+    Width: 90px;
+    right: 20%;
+    top: 5%;
+    font-weight: 700;
+}
+
+.discount img {
+    z-index: 12;
+    position: absolute;
+    Width: 100%;
+}
+
+.discount span {
+    color: #fff;
+    position: absolute;
+    z-index: 15;
+    top: 30px;
+    left: 25px;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+/* 
+.swiper-slide img {
+    width: 100%;
+} */
