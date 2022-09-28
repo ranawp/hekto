@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Oswald:wght@600;700&family=Raleway:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+.top-nav {
+    height: 44px;
+    background-color: #7E33E0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .text {
+    color: #F1F1F1;
+    margin: 0 0 0 .6rem;
+    font-size: 16px;
+    line-height: 16px;
+
+}
+
+.gmail {
+    margin-right: 16px !important;
+}
+
+.left-nav {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.icons {
+    width: 16.13px;
+    height: 14.67px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+select#language-select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+}
+
+select#currency {
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    font-size: 16px;
+}
+
+select option {
+    /* margin: 40px; */
+    /* padding-top: 1rem; */
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cart {
+    margin-left: 15px;
+}
+
+/* menu start */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+    /* background-color: red; */
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-items a {
+    margin-right: 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+.logo {
+    color: rgba(13, 14, 67, 1);
+    margin-right: 30px;
+    font-weight: 700;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-box input {
+    height: 40px;
+    width: 300px;
+    border-color: #F1F0FF;
+    ;
+
+
+}
+
+.search-box img {
+    background: rgba(251, 46, 134, 1);
+    padding: 9.3px;
+}
