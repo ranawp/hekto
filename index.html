@@ -10,43 +10,53 @@
     <script src="https://kit.fontawesome.com/369eb6be78.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="top-nav">
-            <div class="left-nav">
-                <img class="icons" src="./assests/icons/Vector2.png" alt="">
-                <a class="text gmail" href="">mhhasanul@gmail.com</a>
-                <img class="icons" src="./assests/icons/Vector1.png" alt="">
-                <p class="text">(12345)67890 </p>
-            </div>
-            <div class="right-nav">
-                <div class="options">
-                    <label for="language-select"></label>
-
-                    <select id="language-select">
-
-                        <option value="english">English</option>
-                        <option value="bangla">Bangla</option>
-                    </select>
+    <nav>
+        <div class="navbar ">
+            <div class="top-nav container">
+                <div class="left-nav">
+                    <img class="icons" src="./assests/icons/Vector2.png" alt="">
+                    <a class="text gmail" href="">mhhasanul@gmail.com</a>
+                    <img class="icons" src="./assests/icons/Vector1.png" alt="">
+                    <p class="text">(12345)67890 </p>
                 </div>
-                <div>
-                    <label for="currency"></label>
+                <div class="right-nav">
+                    <div class="options">
+                        <label for="language-select"></label>
 
-                    <select id="currency">
-                        <option value="">USD</option>
-                        <option value="Rupi">Rupi</option>
-                        <option value="Taka">Taka</option>
-                    </select>
+                        <select id="language-select">
+
+                            <option value="english">English</option>
+                            <option value="bangla">Bangla</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="currency"></label>
+
+                        <select id="currency">
+                            <option value="">USD</option>
+                            <option value="Rupi">Rupi</option>
+                            <option value="Taka">Taka</option>
+                        </select>
+                    </div>
+                    <a class="text" href="">Login</a>
+                    <img class="icons" src="./assests/icons/carbon_user.png" alt="">
+                    <a class="text" href="">Wishlist <img src="./assests/icons/uil_heart-alt.png" alt=""></a>
+                    <a class="cart" href=""><img src="./assests/icons/Vector.png" alt=""></a>
                 </div>
-                <a class="text" href="">Login</a>
-                <img class="icons" src="./assests/icons/carbon_user.png" alt="">
-                <a class="text" href="">Wishlist <img src="./assests/icons/uil_heart-alt.png" alt=""></a>
-                <a class="cart" href=""><img src="./assests/icons/Vector.png" alt=""></a>
             </div>
         </div>
-        <div class="menu">
+        <div class="menu container">
             <div class="menu-items">
                 <h3 class="logo">Hekto</h3>
                 <a href="#">Home</a>
@@ -70,11 +80,11 @@
 
     <!-- header start -->
     <header>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
+        <div class=" swiper banner">
+
             <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide slide1">
+
+                <div class="swiper-slide slide1 slider-container">
                     <div class="left-side">
                         <img src="./assests/images/lamp.png" alt="">
                         <div class="left-side-info">
@@ -96,7 +106,7 @@
 
                     </div>
                 </div>
-                <div class="swiper-slide slide1">
+                <div class="swiper-slide slide1 slider-container">
                     <div class="left-side">
                         <img src="./assests/images/lamp.png" alt="">
                         <div class="left-side-info">
@@ -108,13 +118,17 @@
                         </div>
                     </div>
                     <div class="right-side">
+                        <div class="discount">
+                            <img src="./assests/images/img4.png" alt="">
+                            <span>50% off</span>
+                        </div>
                         <img class="chair" src="./assests/images/img2.png" alt="">
                         <img class="bg-shadow" src="./assests/images/bg-shadow.png" alt="">
                         <img class="bg-shadow2" src="./assests/images/bg-shadow.png" alt="">
 
                     </div>
                 </div>
-                <div class="swiper-slide slide1">
+                <div class="swiper-slide slide1 slider-container">
                     <div class="left-side">
                         <img src="./assests/images/lamp.png" alt="">
                         <div class="left-side-info">
@@ -126,6 +140,10 @@
                         </div>
                     </div>
                     <div class="right-side">
+                        <div class="discount">
+                            <img src="./assests/images/img4.png" alt="">
+                            <span>50% off</span>
+                        </div>
                         <img class="chair" src="./assests/images/img3.png" alt="">
                         <img class="bg-shadow" src="./assests/images/bg-shadow.png" alt="">
                         <img class="bg-shadow2" src="./assests/images/bg-shadow.png" alt="">
@@ -137,17 +155,485 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-
 
         </div>
     </header>
+
     <!-- header end -->
+
+    <!-- featured-products start -->
+
+    <section class="featured-products container">
+        <h1 class="section-title">Featured Products</h1>
+        <div class="owl-carousel owl-theme ">
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img-5.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <div class="info">
+                            <h5>Cantiliver chair</h5>
+                            <small class="product-info">Code-Y523201</small> <br>
+                            <small class="product-info">$42.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img6.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img7.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+                            <img src="./assests/images/img8.png" alt="">
+
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+
+
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img-5.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+
+                        <div class="product-img">
+
+                            <img src="./assests/images/img-5.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img-5.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <div class="info">
+                            <h5>Cantiliver chair</h5>
+                            <small class="product-info">Code-Y523201</small> <br>
+                            <small class="product-info">$42.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img6.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img7.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+                            <img src="./assests/images/img8.png" alt="">
+
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+
+
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+                        <div class="product-info-icons">
+                            <img class="product-info-icons-img" src="./assests/icons/Group.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/info-icons.png" alt="">
+                            <img class="product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                        </div>
+                        <div class="product-img">
+
+                            <img src="./assests/images/img-5.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" single-product">
+                    <div class="product">
+
+                        <div class="product-img">
+
+                            <img src="./assests/images/img-5.png" alt="">
+                        </div>
+                        <div class="view-details-button">
+                            <button>View Details</button>
+                        </div>
+                        <h5>Cantiliver chair</h5>
+                        <small class="product-info">Code-Y523201</small> <br>
+                        <small class="product-info">$42.00</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- featured-products end -->
+
+    <!-- latest products start -->
+    <section class="container">
+        <h3 class="section-title">Leatest Products</h3>
+        <div class="latest-products-tabs">
+            <button>New Arrival</button>
+            <button>Best Seller</button>
+            <button>Featured</button>
+            <button>Spacial Offer</button>
+        </div>
+        <div class="latest-products">
+            <div class="latest-single-product">
+                <div class="latest-product-info-icons">
+                    <img class="latest-product-info-icons-img" src="./assests/icons/Group.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/info-icons.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                </div>
+                <div class="latest-product-img">
+                    <img src="./assests/images/img2.png" alt="">
+                </div>
+                <div class="latest-products-info">
+                    <p>Comfort Handy Craft</p>
+                    <div class="product-price">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-single-product">
+                <img class="sales-icon" src="./assests/images/Group27.png" alt="">
+                <div class="latest-product-info-icons">
+                    <img class="latest-product-info-icons-img" src="./assests/icons/Group.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/info-icons.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                </div>
+                <div class="latest-product-img">
+                    <img src="./assests/images/image15.png" alt="">
+                </div>
+                <div class="latest-products-info">
+                    <p>Comfort Handy Craft</p>
+                    <div class="product-price">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-single-product">
+                <div class="latest-product-info-icons">
+                    <img class="latest-product-info-icons-img" src="./assests/icons/Group.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/info-icons.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                </div>
+                <div class="latest-product-img">
+                    <img src="./assests/images/img-5.png" alt="">
+                </div>
+                <div class="latest-products-info">
+                    <p>Comfort Handy Craft</p>
+                    <div class="product-price">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-single-product">
+                <div class="latest-product-info-icons">
+                    <img class="latest-product-info-icons-img" src="./assests/icons/Group.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/info-icons.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                </div>
+                <div class="latest-product-img">
+                    <img src="./assests/images/image23.png" alt="">
+                </div>
+                <div class="latest-products-info">
+                    <p>Comfort Handy Craft</p>
+                    <div class="product-price">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-single-product">
+                <div class="latest-product-info-icons">
+                    <img class="latest-product-info-icons-img" src="./assests/icons/Group.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/info-icons.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                </div>
+                <div class="latest-product-img">
+                    <img src="./assests/images/image32.png" alt="">
+                </div>
+                <div class="latest-products-info">
+                    <p>Comfort Handy Craft</p>
+                    <div class="product-price">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-single-product">
+                <div class="latest-product-info-icons">
+                    <img class="latest-product-info-icons-img" src="./assests/icons/Group.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/info-icons.png" alt=""> <br>
+                    <img class="latest-product-info-icons-img" src="./assests/icons/uil_search-plus.png" alt="">
+                </div>
+                <div class="latest-product-img">
+                    <img src="./assests/images/img8.png" alt="">
+                </div>
+                <div class="latest-products-info">
+                    <p>Comfort Handy Craft</p>
+                    <div class="product-price">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what shops offer -->
+    <section class="container shopex">
+        <h2 class="section-title">Whats Shopex Offer!</h2>
+        <div class="shopex-container">
+            <div class="shopex-items">
+                <div class="shopex-item">
+                    <div class="shopex-img">
+                        <img src="./assests/images/car.png" alt="">
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magnam.</p>
+                </div>
+                <div class="shopex-item">
+                    <div class="shopex-img">
+                        <img src="./assests/images/cashback1.png" alt="">
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magnam.</p>
+                </div>
+                <div class="shopex-item">
+                    <div class="shopex-img">
+                        <img src="./assests/images/badge.png" alt="">
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magnam.</p>
+                </div>
+                <div class="shopex-item">
+                    <div class="shopex-img">
+                        <img src="./assests/images/24support.png" alt="">
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magnam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- unique feature -->
+    <section class="unique-feature">
+        <div class="container unique-feature-container">
+            <div class="unique-feature-left">
+                <div class="unique-img-group">
+                    <img class="unique-bg-shadow" src="./assests/images/bg-shadow.png" alt="">
+                    <img class="unique-bg-shadow2" src="./assests/images/bg-shadow.png" alt="">
+                    <img class="unique-img" src="./assests/images/img3.png" alt="">
+
+
+                </div>
+            </div>
+            <div class="unique-feature-right">
+                <div>
+                    <h3>Unique Features Of leatest &
+                        Trending Poducts</h3>
+                    <div class="unique-info">
+                        <span class="bullet1"></span>
+                        <p>All frames constructed with hardwood solids and laminates</p>
+                    </div>
+                    <div class="unique-info">
+                        <span class="bullet2"></span>
+                        <p>Reinforced with double wood dowels, glue, screw - nails corner
+                            blocks and machine nails</p>
+                    </div>
+                    <div class="unique-info">
+                        <span class="bullet3"></span>
+                        <p>Arms, backs and seats are structurally reinforced</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <button class="shop-now">Add To Cart</button>
+                        <div class="add-to-cart-info"><span>B&B Italian Sofa </span> <br>
+                            <span>$32.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- tranding products -->
+    <section>
+        <h3>Tranding Products</h3>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./js/style.js"></script>
 </body>
 
