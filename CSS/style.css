@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Oswald:wght@600;700&family=Raleway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;800&family=Oswald:wght@600;700;800&family=Raleway:wght@500;700&display=swap');
 
 * {
     margin: 0;
@@ -705,12 +705,261 @@ button.owl-dot.active span {
     font-weight: 600;
 }
 
-/* .unique-bg-shadow {
-    position: absolute;
-    z-index: 10px;
+
+/* tranding-products */
+
+.tranding-products {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
-.unique-bg-shadow2 {
+.tranding-products h3 {
+    margin-bottom: 30px;
+}
+
+.tranding-products-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.tranding-single-products {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+}
+
+.tranding-products-img {
+    background-color: #F5F6F8;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    height: 200px;
+
+}
+
+.tranding-product-info {
+    padding-bottom: 20px;
+}
+
+.tranding-product-info h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #151875;
+}
+
+.tranding-products-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tranding-products-price h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 10px;
+    color: #151875;
+}
+
+.tranding-products-price p {
+    text-decoration: line-through;
+    color: #1518754D;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+
+}
+
+.tranding-products-img img {
+    padding: 15px 0;
+
+}
+
+/* disconut */
+.discont-section {
+    display: grid;
+    grid-template-columns: 1.8fr 1.8fr 1.5fr;
+    height: 270px;
+    gap: 20px;
+
+}
+
+.disconut-info {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.disconut-info h3 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    color: #151875;
+    margin-bottom: 10px;
+}
+
+.disconut-info a {
+    color: #FB2E86;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: underline;
+
+}
+
+.left-side {
+    position: relative;
+    background-color: #FFF6FB;
+}
+
+.middle-side {
+    position: relative;
+    background-color: #EEEFFB;
+}
+
+.discont-section .middle-side img {
     position: absolute;
-    z-index: 10px;
-} */
+    right: 10px;
+    bottom: 10px;
+}
+
+
+.left-side img {
+    position: absolute;
+    right: 10px;
+}
+
+
+
+.right-side-discont {
+    display: flex;
+    align-items: center;
+
+}
+
+.right-side-middle {
+    margin: 30px 0;
+}
+
+.right-side-img {
+    height: 75px;
+    width: 107px;
+    background: #F5F6F8;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.right-side-discount-info h3 {
+    color: #151875;
+    font-size: 16px;
+
+}
+
+.right-side-discount-info p {
+    color: #151875;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+/* footer */
+footer {
+    height: 479px;
+    background-color: #EEEFFB;
+    margin-top: 5rem;
+
+}
+
+.footer {
+
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.1fr 1.1fr;
+    /* margin-top: 5rem; */
+    width: 80%;
+    /* margin: ; */
+    margin: 0 auto;
+    /* margin-top: ; */
+    padding-top: 3rem;
+}
+
+.footer-left h3 {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.footer-left input {
+    height: 42px;
+    width: 250px;
+    margin-top: 1.4rem;
+    border-color: transparent;
+}
+
+.footer-left button {
+    width: 135px;
+    height: 42px;
+    color: #EEEFFB;
+    background-color: #FB2E86;
+    border: none;
+    margin-left: -1rem;
+
+}
+
+.footer-left-info {
+    margin-top: 1rem;
+    color: #8A8FB9;
+}
+
+.footer-left-info p {
+    line-height: 1.2rem;
+    padding-right: 2rem;
+}
+
+.footer-middle1 h3 {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.footer-categories {
+    margin-top: 2rem;
+}
+
+.footer-categories p {
+    line-height: 2.3rem;
+    color: #8A8FB9;
+    font-size: 16px;
+}
+
+.copyright {
+    height: 53px;
+    background-color: #E7E4F8;
+    display: flex;
+    align-items: center;
+}
+
+.copyright-social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.copyright-social-icon a {
+    width: 19.42px;
+    height: 19.42px;
+    margin-left: 15px;
+}
+
+.copyright-right p {
+    color: #9DA0AE;
+    font-size: 16px;
+}
+
+.copyright-info {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
