@@ -234,8 +234,8 @@ select option {
     z-index: 10;
     position: absolute;
     Width: 450px;
-    Height: 450px;
-    left: 15%;
+    Height: 440px;
+    left: 17%;
     top: 10%;
 }
 
@@ -810,7 +810,7 @@ button.owl-dot.active span {
 
 }
 
-.left-side {
+.discont-section .left-side {
     position: relative;
     background-color: #FFF6FB;
 }
@@ -963,3 +963,133 @@ footer {
     margin: 0 auto;
     align-items: center;
 }
+
+
+/*------------------------- responsive ------------------------*/
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .swiper-slide .left-side .left-side-info h2 {
+        font-size: 1rem;
+    }
+
+
+    .swiper-slide .left-side img {
+        width: 60%;
+        height: 30%;
+        margin-left: -18px;
+    }
+
+    .swiper-slide .right-side .discount {
+        width: 35%;
+        top: 3rem;
+    }
+
+    .swiper-slide .right-side .banner-group-img img {
+        width: 80%;
+        height: 40%;
+        top: 5rem;
+        /* border: 1px solid red; */
+    }
+
+    /* .swiper-slide .right-side .banner-group-img {
+        top: 4rem;
+    } */
+    .featured-products h1 {
+        font-size: 30px;
+    }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    .swiper-slide .right-side .banner-group-img img {
+        width: 70%;
+        height: 60%;
+        top: 3rem;
+        /* border: 1px solid red; */
+    }
+
+    .swiper-slide .right-side .banner-group-img .chair {
+        left: 20%;
+        width: 68%;
+        height: 55%;
+        top: 3.5rem;
+    }
+
+    /* feature products */
+    .featured-products h1 {
+        font-size: 28px;
+    }
+
+    .featured-products .owl-carousel .item .single-product .view-details-button button {
+        left: 14px;
+    }
+
+    .product-img {
+        height: 240px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .swiper-slide .left-side .left-side-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .swiper-slide .left-side .left-side-info {
+        margin-left: 1rem;
+    }
+
+    .swiper-slide .left-side .left-side-info button {
+        width: 130px;
+        height: 40px;
+    }
+
+    .swiper-slide .left-side img {
+        left: 0;
+        margin-left: -3rem;
+        /* position: absolute; */
+        /* border: 1px solid red; */
+    }
+
+    .swiper-slide .right-side .chair.bg-shadow.bg-shadow2 {
+        width: 78%;
+        height: 68%;
+        top: 5rem;
+        right: 5rem;
+    }
+
+    /* .swiper-slide .right-side .discount img {
+        width: 100%;
+        height: 100%;
+        top: 3rem;
+        border: 1px solid red;
+    }*/
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1200px) {
+    .swiper-slide .left-side .left-side-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .swiper-slide .left-side .left-side-info {
+
+        /* padding-left: 3rem; */
+        margin-left: 1.8rem;
+        /* border: 1px solid red; */
+    }
+
+    .swiper-slide .right-side .banner-group-img img {
+        width: 70%;
+        height: 70%;
+        top: 3rem;
+        /* border: 1px solid red; */
+    }
+
+    .swiper-slide .right-side .banner-group-img .chair {
+        left: 20%;
+        width: 67%;
+    }
+}
+
+
+
+/* @media only screen and (min-width: 1201px) and (more extra large screen){} */
